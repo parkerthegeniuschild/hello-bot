@@ -1,0 +1,32 @@
+{
+    "name": "hello-bot",
+    "version": "1.0.0",
+    "description": "simple slack bot that gives shoutouts",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon ./src/index.js",
+        "start": "cross-env NODE_ENV=production node ./src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/parkerthegeniuschild/hello-bot.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/parkerthegeniuschild/hello-bot/issues"
+    },
+    "homepage": "https://github.com/parkerthegeniuschild/hello-bot#readme",
+    "dependencies": {
+        "@slack/bolt": "^3.7.0",
+        "cross-env": "^7.0.3",
+        "dayjs": "^1.10.7",
+        "dotenv": "^10.0.0",
+        "pify": "^5.0.0",
+        "redis": "^3.1.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    }
+}
